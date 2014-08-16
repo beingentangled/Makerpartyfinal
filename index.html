@@ -30,6 +30,33 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+
+
+
+    <script type="text/JavaScript">
+        $(document).ready(function() {
+
+            $("#nav-toggle").click(function(e){
+
+               // e.preventDefault(),
+                $("#nav-toggle").toggleClass("active");
+                $("body").hasClass("menu-open") ? ($("body").removeClass("menu-open"));
+                $("#overlay").fadeOut(300);
+                $("nav ul li a").animate({
+                    $(this).delay(50 * e).animate({
+                        right: "0px"
+
+                    },fast);
+                });
+                $("overlay").fadeIn(300);
+                $(".nav-wrap").addClass("open");
+
+
+            })
+
+        });
+    </script>
+
 </head>
 
 <body id="page" class="index">
@@ -37,9 +64,27 @@
 
         <section id="hexformation">
             <div id="right-hex"></div>
-            <div id="left-hex"></div>
-            <div id="bottom-right-hex"></div>
-            <div id="bottom-left-hex"></div>
+            <!--<div id="left-hex"></div>-->
+            <!--<div id="bottom-right-hex"></div>
+            <div id="bottom-left-hex"></div>-->
+        </section>
+
+
+        <section id="nav">
+            <div id="nav-toggle" href="#">
+                <span></span>
+            </div>
+
+            <div class="nav-wrap">
+                <ul>
+                    <li>Hellpppp</li>
+                    <li>My</li>
+                    <li>Name</li>
+                    <li>Is</li>
+                    <li>Athul</li>
+                    <li>Suresh</li>
+                </ul>
+            </div>
         </section>
 
         <!-- #Mainhome == First Front Page of the website -->
@@ -107,7 +152,7 @@ Maker Party is also part of the the Summer to Make, Play and Connect, a celebrat
 
      <!-- jQuery Version 1.11.0 -->
    
-
+ <script src="js/jquery-1.11.0.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
