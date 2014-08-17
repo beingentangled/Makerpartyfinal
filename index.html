@@ -18,11 +18,17 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/shapes.css" rel="stylesheet">
      <link href="css/letters.css" rel="stylesheet">
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Custom Fonts -->
+    <!--
     <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!--
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+-->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -35,7 +41,7 @@
 
 
     <script type="text/JavaScript">
-        $(document).ready(function() {
+        $(window).ready(function() {
 
             $("#nav-toggle").click(function(e){
 
@@ -43,33 +49,75 @@
                 $("#nav-toggle").toggleClass("active");
                 $("body").hasClass("menu-open") ? ($("body").removeClass("menu-open"));
                 $("#overlay").fadeOut(300);
-                $("nav ul li a").animate({
+
+                $("nav ul li a").animate(
+                {
                     $(this).delay(50 * e).animate({
                         right: "0px"
 
                     },fast);
+
                 });
+
                 $("overlay").fadeIn(300);
                 $(".nav-wrap").addClass("open");
 
 
-            })
+            });
+
+        });
+    </script>
+
+
+    <script type="text/JavaScript">
+        $(window).load(function() {
+
+
+            $("#nav-toggle").click(function(){ 
+
+            if(!($(".nav-wrap").hasClass("open")))
+            {
+
+                
+                    //$(".nav-wrap").css({ "right" : "0" });
+                    $(".nav-wrap").addClass("open");
+                    $("#nav-toggle").toggleClass("active");
+                    $("#pagecontents").delay(2000).addClass("mopen");
+                    
+
+                   // alert("Fuck");
+               
+            }
+
+            else
+            {
+                  $(".nav-wrap").removeClass("open");
+                  $("#nav-toggle").toggleClass("active");
+                  $("#pagecontents").removeClass("mopen");
+                //alert("Fucker");
+            }
+
+             });
+
 
         });
     </script>
 
 </head>
 
-<body id="page" class="index">
-    <div id="pagecontents"><!-- Website Wrap :) -->
 
-        <section id="hexformation">
+
+
+
+<body id="page" class="index">
+
+
+     <section id="hexformation">
             <div id="right-hex"></div>
             <!--<div id="left-hex"></div>-->
             <!--<div id="bottom-right-hex"></div>
             <div id="bottom-left-hex"></div>-->
         </section>
-
 
         <section id="nav">
             <div id="nav-toggle" href="#">
@@ -78,15 +126,22 @@
 
             <div class="nav-wrap">
                 <ul>
-                    <li>Hellpppp</li>
-                    <li>My</li>
-                    <li>Name</li>
-                    <li>Is</li>
-                    <li>Athul</li>
-                    <li>Suresh</li>
+                    <li><a href="#">Hellpppp</a></li>
+                    <li><a href="#">My</a></li>
+                    <li><a href="#">Name</a></li>
+                    <li><a href="#">Is</a></li>
+                    <li><a href="#">Athul</a></li>
+                    <li><a href="#">Suresh</a></li>
                 </ul>
             </div>
         </section>
+
+
+    <div id="pagecontents"><!-- Website Wrap :) -->
+
+   
+
+
 
         <!-- #Mainhome == First Front Page of the website -->
         <section id="MainHome">
@@ -223,7 +278,11 @@ Maker Party is also part of the the Summer to Make, Play and Connect, a celebrat
                     <div class="mDetail-3 col-md-5 col-md-pull-7"></div>
                 </div>
 
-
+                <div class="row">
+                    <div class="mDetail-5">
+                        <h2>Hello Baby.. :)</h2>
+                    </div>
+                </div>
 
 
             </div>
@@ -247,7 +306,7 @@ Maker Party is also part of the the Summer to Make, Play and Connect, a celebrat
 
      <!-- jQuery Version 1.11.0 -->
    
- <script src="js/jquery-1.11.0.js"></script>
+ <script src="js/jquerymin.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 

@@ -227,6 +227,17 @@ content:"";
 margin:15px auto;
 }
 
+
+a {
+background:transparent;
+color:#428bca;
+text-decoration:none;
+}
+
+a:active,a:hover {
+outline:0;
+}
+
 /** END BOOTSTRAP CLEAR**/
 
 
@@ -275,6 +286,22 @@ bottom:0;
 #pagecontents {
 min-height:100%;
 position:relative;
+-webkit-transition:all .2s ease-in-out;
+transition:all .2s ease-in-out;
+}
+
+
+#pagecontents.mopen {
+
+
+-webkit-transform:translate(-10%);
+-moz-transform:translate(-10%);
+-ms-transform:translate(-10%);
+-o-transform:translate(-10%);
+transform:translate(-10%);
+-webkit-transition:all .2s ease-in-out;
+transition:all .2s ease-in-out;
+
 }
 
 
@@ -390,7 +417,7 @@ pointer-events:none;
 background-color:#FFF;
 }
 
-.slant .sm-line,.work .slash-left:before {
+.slant .sm-line,.mDetail-5 .slash-left:before {
 background:#FFF;
 }
 
@@ -542,7 +569,7 @@ position:fixed;
 z-index:9999;
 height:100%;
 top:0;
-right:-250px;
+right:-250px;/* This should be the transition  -250px to 0px*/
 text-align:right;
 -moz-transition:all 300ms;
 -o-transition:all 300ms;
@@ -569,12 +596,12 @@ list-style:none;
 
 #nav ul li a {
 text-transform:uppercase;
-font-family:"Avenir LT W01 95 Black";
+font-family:"Open Sans", sans-serif;
 font-size:2em;
-color:#1f2022;
+color:black; /* #1f2022 */
 line-height:1;
 display:block;
-position:relative;
+/*position:absolute;*/
 right:-200px;
 outline:none;
 -moz-transition:all 200ms;
@@ -585,15 +612,19 @@ margin:0;
 padding:10px 20px 10px 0;
 }
 
-#nav ul li a:before {
-content:"";
-position:absolute;
-background:#3291cd;
-bottom:0;
+#nav ul li a:hover {
+
+/*position:absolute;*/
+background:#00B0B7;
+/*bottom:0;
 left:100%;
 right:0;
 top:0;
+*/
+text-decoration: none;
+margin-right: 10px;
 z-index:-1;
+color:white;
 transition:left 200ms ease;
 -webkit-transition:left 200ms ease;
 -moz-transition:left 200ms ease;
@@ -607,9 +638,11 @@ margin:0 0 0 -40px;
 
 #nav ul ul li a {
 font-size:1em;
-font-family:"Proxima N W01 Light";
+
 }
 
+
+/** Menu button **/
 #nav-toggle {
 position:fixed;
 right:34px;
@@ -650,6 +683,7 @@ background-color:transparent;
 -ms-transform:rotate(45deg);
 -o-transform:rotate(45deg);
 transform:rotate(45deg);
+top:0;
 }
 
 #nav-toggle.active span:after {
@@ -658,6 +692,7 @@ transform:rotate(45deg);
 -ms-transform:rotate(-45deg);
 -o-transform:rotate(-45deg);
 transform:rotate(-45deg);
+bottom:0;
 }
 
 #nav-toggle:after {
@@ -863,3 +898,16 @@ transform:rotate(-8deg);
 
 
 /**END WHAT MAKES**/
+
+
+.mDetail-5 {
+height:auto;
+padding:40px;
+color:#0FF;
+}
+
+.mDetail-5 h2 {
+font-size:2em;
+}
+
+/**  
