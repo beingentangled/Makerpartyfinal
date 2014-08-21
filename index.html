@@ -41,31 +41,9 @@
 
 
     <script type="text/JavaScript">
-        $(window).ready(function() {
+      
 
-            $("#nav-toggle").click(function(e){
-
-               // e.preventDefault(),
-                $("#nav-toggle").toggleClass("active");
-                $("body").hasClass("menu-open") ? ($("body").removeClass("menu-open"));
-                $("#overlay").fadeOut(300);
-
-                $("nav ul li a").animate(
-                {
-                    $(this).delay(50 * e).animate({
-                        right: "0px"
-
-                    },fast);
-
-                });
-
-                $("overlay").fadeIn(300);
-                $(".nav-wrap").addClass("open");
-
-
-            });
-
-        });
+    
     </script>
 
 
@@ -100,6 +78,44 @@
              });
 
 
+
+/** Window Height n stuffs **/
+
+function jQupdatewindow(){
+
+
+
+        var width = $(window).width();
+        var height = $(window).height();
+    //init_menu_posY = height - total_offset;
+
+/** EacH Section open animation **/
+
+
+  $(".row").each(function(){
+            //console.log ( $(this).offset().top + "anim");
+            if ( ( $(window).scrollTop()  < $(this).offset().top + $(this).height() - 150) && $(window).scrollTop() + $(window).height() > $(this).offset().top +100 ) { //$(this).height()+ $(this).offset().top-150  > $(window).scrollTop()
+
+                $(this).css({'transform':'scale(1,1)','opacity':1, '-webkit-transform': 'scale(1,1)'});
+            }else {
+                $(this).css({'transform':'scale(0.5,1)','opacity':0, '-webkit-transform': 'scale(0.5,1)'});
+            }
+        });
+
+
+
+};
+
+
+$(document).ready(jQupdatewindow);    // When the page first loads
+$(window).resize(jQupdatewindow);     // When the browser changes size
+$(window).scroll(jQupdatewindow); 
+
+/** end each section open animation **/
+
+
+
+
         });
     </script>
 
@@ -114,8 +130,8 @@
 
      <section id="hexformation">
             <div id="right-hex"></div>
-            <!--<div id="left-hex"></div>-->
-            <!--<div id="bottom-right-hex"></div>
+           <!-- <div id="left-hex"></div>
+            <<div id="bottom-right-hex"></div>
             <div id="bottom-left-hex"></div>-->
         </section>
 
@@ -140,11 +156,14 @@
     <div id="pagecontents"><!-- Website Wrap :) -->
 
    
-
+  <div id="infoTabs">
+                </div>
 
 
         <!-- #Mainhome == First Front Page of the website -->
         <section id="MainHome">
+
+                
                 <div class="container">
                     <div class="row">
                         <div class="title-contain col-md-7 col-md-offset-4 ">
@@ -223,11 +242,78 @@
                     <div class="row" id="dateid">
                         <div class="container title-contain"><h1>September 20 - 22 2014</h1></div>
                 </div>
+            </div>
+        </div>
+</div>
+
+
         </section>
 
 
+
+
+
+
+
+        <section id="whatmakes" class="slant white bottom">
+            <div class="container-fluid">
+                <h2 class="section-title">
+                <!--What we Love?-->
+                </h2>
+
+                <div class="row">
+                    <div class="mDetail-1 col-md-7">
+                        <h2 class="widb-title">
+                            <strong>Make</strong>
+                            
+                        </h2>
+
+                        <p class="sc-para">Get your hands dirty. The best way to learn is through hands-on making and building! Create web pages, multimedia videos, or remixes that help you learn practical skills as you go.</p>
+                    </div>
+
+                    <div class="mDetail-2 col-md-5">
+                        <h2 class="widb-title"><strong>TEACH</strong>
+                           
+                        </h2>
+
+                         <p class="sc-para">Share what you know. Anyone can teach with Webmaker. Whether you’re an educator in the classroom or an enthusiastic mentor, parent or friend, we’ve got activities and teaching guides that can help.</p>
+                    </div>
+
+                    
+                </div>
+
+
+                <div class="row">
+                    <div class="mDetail-4 col-md-7 col-md-push-5">
+                         <h2 class="widb-title"><strong>DISCOVER</strong>
+                         </h2>
+
+                         <p class="sc-para"><strong>Get your feet wet.</strong> Introduce yourself to new digital skills quickly through fun things to read, watch, listen or share.</p>
+                    </div>
+                    <div class="mDetail-3 col-md-5 col-md-pull-7"> <h2 class="widb-title">JOIN US AT<strong>Kochi</strong></h2></div>
+                </div>
+
+                <div class="row">
+                    <div class="mDetail-5">
+                        <h2></h2>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
         <!-- #whatismp is the section for the detailing abt makerparty -->
-        <section id="whatismp" class="slant top bottom"> 
+        <section id="whatismp" class="slant top"> 
             <div class="container">
                <div class="row">
                 <h1> What is Maker Party? </h1>
@@ -251,42 +337,20 @@ Maker Party is also part of the the Summer to Make, Play and Connect, a celebrat
         </section>
 
 
+<footer>
 
-        <section id="whatmakes" class="slant white top bottom">
-            <div class="container-fluid">
-                <h2 class="section-title">
-                <!--What we Love?-->
-                </h2>
+    <div class="row">
+        <div class="col-md-4">
+            <h4>A Mozilla Kerala Initative</h4>
+        
 
-                <div class="row">
-                    <div class="mDetail-1 col-md-7">
-                        <h2 class="widb-title">MAKER PARTY IS
-                            <strong>AWESOME</strong>
-                        </h2>
-                    </div>
+        </div>
 
-                    <div class="mDetail-2 col-md-5">
-                        <h2 class="widb-title">JOIN US AT<strong>KOCHI</strong></h2>
-                    </div>
-
-                    
-                </div>
-
-
-                <div class="row">
-                    <div class="mDetail-4 col-md-7 col-md-push-5"></div>
-                    <div class="mDetail-3 col-md-5 col-md-pull-7"></div>
-                </div>
-
-                <div class="row">
-                    <div class="mDetail-5">
-                        <h2>Hello Baby.. :)</h2>
-                    </div>
-                </div>
-
-
-            </div>
-        </section>
+        <div class="col-md-4 col-md-push-5">
+            Facebook | Twitter | Hello
+        </div>
+    </div>
+</footer>
 
 
     </div><!-- End Website Wrap -->

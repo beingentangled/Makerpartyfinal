@@ -8,6 +8,7 @@ html {
 	-webkit-tap-highlight-color:transparent;
 	height:100%;
 
+
 }
 
 body {
@@ -26,6 +27,14 @@ body {
 
 section {
 	display: block;
+	-webkit-transition:all .2s ease-in-out;
+transition:all .2s ease-in-out;
+}
+
+.row {
+
+	-webkit-transition:all .5s ease-in-out;
+transition:all .5s ease-in-out;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -312,8 +321,8 @@ transition:all .2s ease-in-out;
 
 
 #MainHome {
-min-height:840px;
-padding-top:200px;
+min-height:89vh;
+padding-top:250px;
 
 z-index: 1;
 }
@@ -323,9 +332,10 @@ z-index: 1;
 #MainHome h1 {
 	color:FFE600;
 	font-weight: bold;
+
 }
 #MainHome .page-title{
-text-transform:uppercase;
+/*text-transform:uppercase;*/
 position:relative;
 top:25px;
 z-index:7;
@@ -334,7 +344,7 @@ padding:0 10px;
 
 #MainHome .page-title .pretitle{
 line-height:1;
-font-family:"Avenir LT W01 95 Black";
+font-family:"Open Sans", sans-serif;
 top:0px;
 /*width:220%;*/
 margin:0;
@@ -358,6 +368,26 @@ margin:0;
 	font-size: 3em;
 	color: #FFF;
 }
+
+
+
+
+/** Home Tabs **/
+
+#infoTabs
+	{
+		bottom: 0;
+		height: 50px;
+		background-color: blue;
+		position: absolute;
+
+	}
+
+
+/*** END Home Tabs ***/
+
+
+
 
 /** END #MainHome Configs **/
 
@@ -427,9 +457,10 @@ background:#FFF;
 text-align:center;
 color:#FFF;
 background:#EF413D;
-margin-bottom:180px;
+margin-bottom:0px;
 padding:30px 0 50px;
 z-index: 2;
+
 }
 
 #whatismp .wimp-content {
@@ -725,7 +756,10 @@ transform:rotate(-45deg);
 #whatmakes {
 text-align:center;
 color:#000;
+text-shadow: 1px 1px 0px #000;
 background-color: #fff;
+-webkit-transition:all .5s ease-in-out;
+transition:all .5s ease-in-out;
 }
 
 
@@ -773,24 +807,60 @@ overflow-y:hidden;
 
 /** Maker Details **/
 
+
+
+.sc-para {
+	color: white;
+	width: 50%;
+	margin: 0 auto;
+
+}
+
 .mDetail-1 {
-/*background:url(../images/user-centered-design.jpg) no-repeat center center;*/
+background:url(../img/makes-bg.jpg) no-repeat center center;
 background-color:RGB(42,77,80);
 background-size:cover;
 -webkit-background-size:cover;
 -moz-background-size:cover;
+-webkit-transition:all .5s ease-in-out;
+transition:all .5s ease-in-out;
 
+}
+
+.mDetail-1:hover {
+ padding-left: 30px;
+ margin-left: -15px;
 }
 
 
 
 .mDetail-2 {
 background:#f3f3f3;
+text-shadow: 1px 1px 0px #fff;
+-webkit-transition:all .5s ease-in-out;
+transition:all .5s ease-in-out;
+
 }
+
+.mDetail-2:hover {
+	background:#f0f0f0;
+ padding-right: 30px;
+ margin-right: -15px;
+}
+
+.mDetail-2:hover:before :after{
+	background:#f0f0f0;
+
+}
+
 
 .mDetail-2 .widb-title {
 color:#1f2022!important;
 
+}
+
+.mDetail-2 .sc-para {
+	color:#1f2022!important;
 }
 
 .mDetail-2:before {
@@ -839,11 +909,19 @@ transform:rotate(8deg);
 
 .mDetail-4 {
 background:#EF413D no-repeat center center;
+background:url(../img/teach-bg.jpg) no-repeat center center;
 background-size:cover;
 -webkit-background-size:cover;
 -moz-background-size:cover;
+-webkit-transition:all .5s ease-in-out;
+transition:all .5s ease-in-out;
+
 }
 
+.mDetail-4:hover{
+
+	margin-left: -10px;
+}
 
 .mDetail-3 {
 background:#282828;
@@ -903,11 +981,85 @@ transform:rotate(-8deg);
 .mDetail-5 {
 height:auto;
 padding:40px;
-color:#0FF;
+/*background-color:#0FF;**/
 }
 
 .mDetail-5 h2 {
 font-size:2em;
 }
 
-/**  
+/**  fcking Cool css animationnnnssss.. yo yo useless piece of shit.. :P **/
+
+
+.animated {
+-webkit-animation-duration:1s;
+animation-duration:1s;
+-webkit-animation-fill-mode:both;
+animation-fill-mode:both;
+}
+
+.animated-slow {
+-webkit-animation-duration:2s;
+animation-duration:2s;
+-webkit-animation-fill-mode:both;
+animation-fill-mode:both;
+}
+
+.animated-super-slow {
+-webkit-animation-duration:4s;
+animation-duration:4s;
+-webkit-animation-fill-mode:both;
+animation-fill-mode:both;
+}
+
+.fadeInTitle {
+-webkit-animation-name:fadeInTitle;
+animation-name:fadeInTitle;
+}
+
+.fadeInTitleShort {
+-webkit-animation-name:fadeInTitleShort;
+animation-name:fadeInTitleShort;
+}
+
+.fadeIn {
+-webkit-animation-name:fadeIn;
+animation-name:fadeIn;
+}
+
+.fadeInUp {
+-webkit-animation-name:fadeInUp;
+animation-name:fadeInUp;
+}
+
+.fadeInLeft {
+-webkit-animation-name:fadeInLeft;
+animation-name:fadeInLeft;
+}
+
+.fadeInRight {
+-webkit-animation-name:fadeInRight;
+animation-name:fadeInRight;
+}
+
+
+
+/** end css transitions **/
+
+
+/** Footer **/
+
+footer {
+text-align:center;
+background:#1f2022;
+color:#fff;
+font-size:.8em;
+height: 205px;
+padding-top: 60px;
+padding-bottom:30px;
+}
+
+footer h4 {
+
+	text-transform: none;
+}
