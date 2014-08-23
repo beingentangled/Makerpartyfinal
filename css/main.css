@@ -38,7 +38,7 @@ transition:all .5s ease-in-out;
 }
 
 h1,h2,h3,h4,h5,h6 {
-font-family:"Open Sans",sans-serif;
+/*font-family:"Open Sans",sans-serif;*/
 -webkit-font-smoothing:antialiased;
 text-rendering:optimizeLegibility;
 -moz-osx-font-smoothing:grayscale;
@@ -327,6 +327,11 @@ padding-top:250px;
 z-index: 1;
 }
 
+#MainHome img{
+	width: 200px;
+	min-width: 100%;
+}
+
 
 
 #MainHome h1 {
@@ -362,6 +367,7 @@ margin:0;
 
 #dateid {
 	margin-top: 30px;
+	font-family: "Lato", sans-serif;
 }
 
 #dateid h1 {
@@ -470,11 +476,82 @@ font-size:1.1em;
 #whatismp h2, #whatismp h1 {
 margin: 50px 0 20px 0;
 color:#FFE600;
-font-weight: bold;
+font-size: 2.5em;
+text-transform: none;
+/*font-weight: bold;*/
 }
+
+#event-counts {
+	margin-left: 2px;
+	font-family: "Lato", sans-serif;
+}
+
+#event-counts h1 {
+
+	color:#fff;
+	font-size: 5em;
+	font-weight: bolder;
+	margin-bottom: 1px;
+
+}
+
+#event-counts h2{
+
+	margin-top: 1px;
+
+}
+#event-counts h3{
+
+	margin-top: 50px;
+	text-transform: none;
+
+
+}
+
 
 /** #whatismp ENDS Here **/
 
+#watchvideo
+	{
+		height: 100px;
+		margin: 0;
+		background: url(../img/watchvideopic.jpg) no-repeat;
+		background-size: cover;
+	}
+
+#watchvideo h3 {
+	margin: 30px auto;
+	text-transform: none;
+	color: #fff;
+	text-shadow:1px 1px 1px #000 ;
+	font-size: 2em;
+}
+
+#watchvideo:hover
+	{
+		height: 120px;
+	}
+	
+#registerbanner
+	{
+		height: 100px;
+		margin: 0;
+		
+		background-size: cover;
+	}
+
+#registerbanner h1 {
+	margin: 30px auto;
+	text-transform: none;
+	color: #fff;
+
+	/*text-shadow:1px 1px 1px #000 ;*/
+	font-size: 2em;
+}
+#registerbanner:hover
+	{
+		height: 120px;
+	}
 
 
 
