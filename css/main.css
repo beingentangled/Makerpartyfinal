@@ -498,11 +498,13 @@ text-transform: none;
 #event-counts h2{
 
 	margin-top: 1px;
+		margin-bottom: 1px;
+
 
 }
 #event-counts h3{
 
-	margin-top: 50px;
+	margin-top: 10px;
 	text-transform: none;
 
 
