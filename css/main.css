@@ -529,10 +529,17 @@ text-transform: none;
 	font-size: 2em;
 }
 
-#watchvideo:hover
-	{
-		height: 120px;
-	}
+#watchvideo a {
+
+	color: #fff;
+	text-decoration: none;
+}
+
+#watchvideo a:hover {
+
+	text-shadow:1px 1px 2px #000 ;
+}
+
 	
 #registerbanner
 	{
@@ -1141,4 +1148,8 @@ padding-bottom:30px;
 footer h4 {
 
 	text-transform: none;
+}
+
+footer a {
+	color:#fff;
 }
