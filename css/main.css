@@ -316,7 +316,7 @@ transition:all .2s ease-in-out;
  
 .alert a {
 	font-size: 1.6em;
-	color: #EF413D;
+	/*color: #EF413D;*/
 	background-color: #FFE600;
 	padding: 10px;
 }
@@ -330,7 +330,7 @@ transition:all .2s ease-in-out;
 
 #MainHome {
 min-height:89vh;
-padding-top:170px;
+padding-top:220px;
 
 z-index: 1;
 }
@@ -352,7 +352,7 @@ z-index: 1;
 	padding-top: 0px;
 	color:#fff;
 	text-transform: none;
-	margin-top: 0;
+	margin-top: 5px;
 }
 
 #MainHome h4 {
@@ -392,10 +392,12 @@ margin:0;
 #dateid {
 	margin-top: 5px;
 	font-family: "Lato", sans-serif;
+
 }
 
 #dateid h1 {
 	margin-top: 30px;
+	margin-bottom: 0;
 }
 
 #dateid h1 {
@@ -450,7 +452,7 @@ top:0;
 right:-45px;
 height:200px;
 background:#EF413D;
-width:150%;
+width:100%;
 content:'';
 pointer-events:none;
 }
@@ -506,6 +508,7 @@ font-size:1.1em;
 margin: 50px 0 20px 0;
 color:#FFE600;
 font-size: 2.5em;
+letter-spacing: -1px;
 text-transform: none;
 /*font-weight: bold;*/
 }
@@ -546,7 +549,7 @@ text-transform: none;
 	{
 		height: 80px;
 		margin: 0;
-		background: url(../img/watchvideopic.jpg) no-repeat;
+		background: url(../img/watchvideopic.jpg) repeat;
 		background-size: cover;
 	}
 
@@ -922,7 +925,8 @@ margin-bottom:110px;
 }
 
 #whatmakes .widb-title {
-font-family:"Open Sans", sans-serif;
+font-family:"Helvetica", Open Sans, sans-serif;
+
 font-size:2.5em;
 line-height:0.8;
 position:relative;
@@ -931,8 +935,9 @@ z-index:100;
 }
 
 #whatmakes .widb-title strong {
-font-family:"Open Sans", sans-serif;
+
 display:block;
+font-weight: 400;
 font-size:1.6em;
 }
 
@@ -954,7 +959,7 @@ overflow-y:hidden;
 
 .sc-para {
 	color: white;
-	width: 50%;
+	width: 70%;
 	margin: 0 auto;
 
 }
@@ -968,6 +973,13 @@ background-size:cover;
 -webkit-transition:all .5s ease-in-out;
 transition:all .5s ease-in-out;
 
+}
+
+.mDetail-1 a {
+	color: #fff;
+	padding: 5px;
+	margin-top: 5px;
+	border: 1px solid;
 }
 
 .mDetail-1:hover {
@@ -1050,6 +1062,13 @@ transform:rotate(8deg);
 
 }
 
+.mDetail-2 a {
+
+	border: 1px solid;
+	padding:5px;
+	margin-top: 0px;
+}
+
 .mDetail-4 {
 background:#EF413D no-repeat center center;
 background:url(../img/teach-bg.jpg) no-repeat center center;
@@ -1060,6 +1079,11 @@ background-size:cover;
 transition:all .5s ease-in-out;
 
 }
+
+.mDetail-4 .sc-para {
+width: 50%;
+
+} 
 
 .mDetail-4:hover{
 
@@ -1196,6 +1220,7 @@ footer {
 text-align:center;
 /*background:#1f2022;*/
 background: url("../img/footer-bkg.png") repeat;
+
 color:#fff;
 font-size:.8em;
 height: auto;
@@ -1219,6 +1244,26 @@ footer a {
 
 footer #sociallinks a {
 	font-size: 1.5em;
+}
+
+
+
+
+
+/** Register form **/
+
+
+#headerbar {
+	height: 200px;
+
+}
+
+#header-logo {
+	margin-left: 50px;
+	margin-top: 20px;
+	width: 250px;
+	height: 250px;
+
 }
 
 
