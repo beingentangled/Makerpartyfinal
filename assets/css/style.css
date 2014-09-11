@@ -19,7 +19,13 @@ h6 { font-size: 20px; font-weight: 700; display: block; }
 .highlight { color: #E65546; } 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 { margin-top: 20px; margin-bottom: 20px; }
 h5, .h5, h6, .h6, .h7 { margin-top: 20px; margin-bottom: 10px; }
-
+.bold{
+	font-weight: bold;
+}
+.lighter{
+	font-weight: 304;
+	font-size: 16px
+}
 p { font-size: 16px; line-height: 27px; color: #1D1D1D; }
 small { font-weight: 300; font-size: 15px; line-height: 26px; }
 
@@ -33,10 +39,10 @@ a:hover, a:active, a:focus { color: #E65546; text-decoration: none; outline: non
 
 hr { width: 100%; border-top: 1px solid #E9E9E9; display: inline-block; }
 
-.light { color: #fff; background: #333; }
+.light { color: #fff; background: #fff; }
 .dark { color: #000; background: #fff; }
 .highlight { color: #E65546; } 
-.center {text-align:center;}
+.right {text-align:right;}
 .resp-center {text-align:center;}
 
 .btn { border: 1px solid #fff; font-size: 13px; border-radius: 3px; background: transparent; text-transform: uppercase; font-weight: 700; padding: 15px 40px; min-width: 162px; max-width: 100%; }
