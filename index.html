@@ -1,429 +1,380 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
 
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="At the heart of Kochi and at one of the most pioneer educational institution of the country, Cochin University Of Science And Technology, we are expecting an audience of 3000+. The awesomeness doesn't stop here we are setting up about 50 stations to reach all kinds of stuffs ranging from how to start a computer to open robotics and much more. ">
-    <meta name="author" content="Atul Suresh">
-    <link rel="icon" type="image/png" href="http://webmaker.org/img/favicon.ico">
-
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <title>Maker Party Kochi</title>
+    <meta name="description" content="Startups template">
+    <meta name="keywords" content="Startups template">
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.jpg">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-touch-icon-72x72.jpg">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-touch-icon-114x114.jpg">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/font-lineicons.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/animate.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/toastr.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/zup.css" type="text/css" media="all" />
+    <link rel="stylesheet" src="/your/css/folder/popup.css">
 
-    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/shapes.css" rel="stylesheet">
-     <link href="css/letters.css" rel="stylesheet">
-      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Custom Fonts -->
-    <!--
-    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-
--->
-   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700italic,800italic' rel='stylesheet' type='text/css'>
-        <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <script src="assets/js/html5.js"></script>
+        <script src="assets/js/respond.min.js"></script>
     <![endif]-->
-
-
-
-
-    <script type="text/JavaScript">
-      
-
-    
-    </script>
-
-
-    <script type="text/JavaScript">
-        $(window).load(function() {
-
-
-            $("#nav-toggle").click(function(){ 
-
-            if(!($(".nav-wrap").hasClass("open")))
-            {
-
-                
-                    //$(".nav-wrap").css({ "right" : "0" });
-                    $(".nav-wrap").addClass("open");
-                    $("#nav-toggle").toggleClass("active");
-                    $("#pagecontents").delay(2000).addClass("mopen");
-                    
-
-                   // alert("Fuck");
-               
-            }
-
-            else
-            {
-                  $(".nav-wrap").removeClass("open");
-                  $("#nav-toggle").toggleClass("active");
-                  $("#pagecontents").removeClass("mopen");
-                //alert("Fucker");
-            }
-
-             });
-
-
-
-/** Window Height n stuffs **/
-
-function jQupdatewindow(){
-
-
-
-        var width = $(window).width();
-        var height = $(window).height();
-    //init_menu_posY = height - total_offset;
-
-/** EacH Section open animation **/
-
-
-  $(".row").each(function(){
-            //console.log ( $(this).offset().top + "anim");
-            if ( ( $(window).scrollTop()  < $(this).offset().top + $(this).height() - 150) && $(window).scrollTop() + $(window).height() > $(this).offset().top +100 ) { //$(this).height()+ $(this).offset().top-150  > $(window).scrollTop()
-
-                $(this).css({'transform':'scale(1,1)','opacity':1, '-webkit-transform': 'scale(1,1)'});
-            }else {
-                $(this).css({'transform':'scale(0.5,1)','opacity':0, '-webkit-transform': 'scale(0.5,1)'});
-            }
-        });
-
-
-};
-
-
-$(document).ready(jQupdatewindow);    // When the page first loads
-$(window).resize(jQupdatewindow);     // When the browser changes size
-$(window).scroll(jQupdatewindow); 
-
-/** end each section open animation **/
-
-
-
-
-        });
-    </script>
-
-    
-
+     
 </head>
 
+<body id="maker-party-kochi">
 
-
-
-
-<body id="page" class="index">
-
-
-     <section id="hexformation">
-            <div id="right-hex"></div>
-           <!-- <div id="left-hex"></div>
-            <<div id="bottom-right-hex"></div>
-            <div id="bottom-left-hex"></div>-->
-        </section>
-
-        <section id="nav">
-            <div id="nav-toggle" href="#">
-                <span></span>
-            </div>
-
-            <div class="nav-wrap">
-                <ul>
-                    <li><a href="#MainHome">Home</a></li>
-                    <li><a href="#whatmakes">What?</a></li>
-                    <li><a href="#whatismp">Why?</a></li>
-                    <li><a href="#registerbanner">Get me in.</a></li>
-                    <li><a href="#theend">Contact</a></li>
-                </ul>
-            </div>
-        </section>
-
-
-    <div id="pagecontents"><!-- Website Wrap :) -->
-
-   
-  <div id="infoTabs">
-                </div>
-
-
-        <!-- #Mainhome == First Front Page of the website -->
-        <section id="MainHome">
-
-                
-                <div class="container">
-                    <div class="row">
-                        <div class="title-contain col-md-7 col-md-offset-3 ">
-                            <!--
-                            <div class="page-title">
-                                <h1>Maker</h1>
-                                 <div class="clear"></div>
-                                 <h1>Party</h1>
-                                 <div class="pretitle">
-                                    Kochi
-                                 </div>
-                            </div>
-                        -->
-
-<!--- Anush's Maker Party Logo 
-                        <div class="text-mp yellow">
-            <div class="letter-container M">
-                <div class="M1 letter"></div>
-                <div class="M2 letter parallelogram-letter"></div>
-                <div class="M3 letter parallelogram-letter-inv"></div>
-                <div class="M4 letter "></div>
-            </div>
-            <div class="letter-container A">
-                <div class="A1 letter parallelogram-letter-inv"></div>
-                <div class="A2 letter parallelogram-letter"></div>
-                <div class="A3 letter horizontal-letter"></div>
-            </div>
-            <div class="letter-container K">
-                <div class="K1 letter"></div>
-                <div class="K2 letter parallelogram-letter-inv h55"></div>
-                <div class="K3 letter parallelogram-letter h55"></div>
-            </div>
-            <div class="letter-container E">
-                <div class="E1 letter"></div>
-                <div class="E2 letter horizontal-letter"></div>
-                <div class="E3 letter horizontal-letter"></div>
-                <div class="E4 letter horizontal-letter"></div>
-            </div>
-            <div class="letter-container R">
-                <div class="R1 letter"></div>
-                <div class="R2 letter circuar-letter"></div>
-                <div class="R3 letter parallelogram-letter h55"></div>
-            </div>
-        </div>
-        <div class="text-mp yellow">
-            <div class="letter-container P">
-                <div class="P1 letter"></div>
-                <div class="P2 letter circuar-letter"></div>
-            </div>
-            <div class="letter-container A">
-                <div class="A1 letter parallelogram-letter-inv"></div>
-                <div class="A2 letter parallelogram-letter"></div>
-                <div class="A3 letter horizontal-letter"></div>
-            </div>
-            <div class="letter-container R">
-                <div class="R1 letter"></div>
-                <div class="R2 letter circuar-letter"></div>
-                <div class="R3 letter parallelogram-letter h55"></div>
-            </div>
-            <div class="letter-container T">
-                <div class="T1 letter horizontal-letter"></div>
-                <div class="T2 letter"></div>
-            </div>
-            <div class="letter-container Y">
-                <div class="Y1 letter parallelogram-letter"></div>      
-                <div class="Y2 letter parallelogram-letter-inv"></div>  
-                <div class="Y3 letter"></div>       
-            </div>
-        </div>
-
-        END ANUSH MAKER PARTY LOGO -->
-        <img src="img/MakerPartylogo.png" />
+    <!-- Preloader -->
+    <div id="mask">
+        <div id="loader"></div>
+    </div>
         
-
-        
-                        <div>
-                            
-                            <h2>A Festival of Inventions and Inspiration!</h2>
-                    </div>
-
-
-                    <div class="row" id="dateid">
-                        <div class="container title-contain"><h1>September 20, 21, 22.  2014</h1>
-<h4>Mozilla Kerala \ Cochin University of Science And Technology, Kochi</h4>
-                        </div>
-                        
-
-                        <div class="container alert"><a href="#registerbanner">Registration are Open!</a></div>
-
-                    
-
-                    </div>
-            </div>
-        </div>
-</div>
-
-
-        </section>
-
-
-
-
-
-
-
-        <section id="whatmakes" class="slant white bottom animated fadeInLeft">
-            <div class="container-fluid">
-                <h2 class="section-title">
-                <!--What we Love?-->
-                </h2>
-
-                <div class="row">
-                    <div class="mDetail-1 col-md-7">
-                        <h2 class="widb-title">
-                            <strong>DISCOVER</strong>
-                            
-                        </h2>
-
-                        <p class="sc-para">Introduce yourself to new skills quickly through fun things to read, watch, listen or share.  The event has a simple format like science fair, where facilitators are sharing cutting edge technologies, each something new in a engaging way.
-                        </br></br>
-                        
-                        <a href ="makes-register.html">Want to display your innovative idea? Register here.</a>
-                    
-                        </p>
-                    </div>
-
-                    <div class="mDetail-2 col-md-5">
-                        <h2 class="widb-title"><strong>LEARN</strong>
-                           
-                        </h2>
-
-                         <p class="sc-para">Get your hands dirty. The best way to learn is through hands-on making and building! Create web pages, multimedia videos, or remixes that help you learn practical skills as you go.</p></br>
-                         
-                         <a href ="volunteer-register.html">Run a teaching station, share your knowledge.</a>
-                     
-                    </div>
-
-                    
-                </div>
-
-
-                <div class="row">
-                    <div class="mDetail-4 col-md-7 col-md-push-5">
-                         <h2 class="widb-title"><strong>INSPIRE</strong>
-                         </h2>
-
-                         <p class="sc-para">Hear from a bunch of awesome souls who created really cool stuffs that will change our life. Innovators, Actors, Leaders, Entrepreneurs, Students... Worth giving your ears.</p>
-
-                    </div>
-                    <div class="mDetail-3 col-md-5 col-md-pull-7"> <h2 class="widb-title">JOIN US AT<strong>Kochi</strong></h2></div>
-                </div>
-
-                <div class="row">
-                    <div class="mDetail-5">
-                        <h2></h2>
-                    </div>
-                </div>
-
-
-            </div>
-        </section>
-
-
-
-
-
-
-
-
-
-
-        <!-- #whatismp is the section for the detailing abt makerparty -->
-        <section id="whatismp" class="slant top"> 
+    <header>
+        <nav class="navigation navigation-header">
             <div class="container">
-                <div class="col-md-8">
-               <div class="row">
-                <h1> What is Maker Party? </h1>
-                <div class="sm-line"></div>
-                <p class="wimp-content col-md-8 col-md-offset-2">
-                    Maker Party is Mozilla's global campaign to teach the web. Through thousands of community-run events around the world, Maker Party unites educators, organizations and enthusiastic web users with hands-on learning and making.
-                </p>
-               </div>
-
+                <div class="navigation-brand">
+                    <div class="brand-logo">
             
-
-
-        <div class="row">
-
-                <h1>#KochiHacks</h1>
-                    <div class="sm-line"></div>
-                <div class="wimp-content col-md-8 col-md-offset-2">
-At the heart of Kochi and at one of the most pioneer educational institution of the country, Cochin University Of Science And Technology, we are expecting an audience of 3000+. The awesomeness doesn't stop here we are setting up about 50 stations to reach all kinds of stuffs ranging from how to start a computer to open robotics and much more. There will also be dedicated talks by leading personalities. Couple of sessions for Women folks to dive them into open source projects. And of course there will be exclusive promotions of FFOS Smartphones that is being recently launched on Indian market. This will totally be a festival of learning irrespective of age, first of its kind in the locale where people from all strata of life come and gather knowledge.Fun Unlimited love Spread the word about this Open Carnival #KochiHacks
+                    </div>
+                    <button class="navigation-toggle visible-xs" type="button" data-toggle="dropdown" data-target=".navigation-navbar">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
                 </div>
-               </div>
-           </div>
+                <div class="navigation-navbar">
+                    <ul class="navigation-bar navigation-bar-left">
+                        <li class="active"><a href="#hero">Home</a></li>
+                        <li><a href="#what">What & Why ?</a></li>
+                        <li><a href="#hackathon">FFOS Hackathon</a></li>
+                        <li><a href="#mozk">Mozilla Kerala</a></li>
+                        <li><a href="#partner">Partners</a></li>
+                        <li><a href="#register">Register</a></li>
+                        <li><a href="#contacts">Contacts</a></li>
+                    </ul>
+                    <ul class="navigation-bar navigation-bar-right">
+                      <a href="register.html"><img src="assets/img/register.png" width="100px"></a>
+                    </ul>  
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div id="hero" class="static-header light clearfix">
+        <div class="text-heading">
+            <!--<h1 class="animated hiding" data-animation="bounceInDown" data-delay="0">A Festival of Inventions and Inspiration!</h1>-->
+            
+        </div>
+
+           <ul class="list-inline">
+                <li></li>
+            </ul>
+            <div class="container">
+                <img src="assets/img/features/MakerPartylogo.png" style="display: block; margin-left: auto;  margin-right: auto;" alt="video" class="img-responsive animated hiding" data-animation="bounceInUp" />
+                <div style="text-align: center;">
+  <h3 class="animated hiding" data-animation="fadeInDown" data-delay="500">September 20, 21, 22. 2014</h3>
+            <h3 class="animated hiding" data-animation="fadeInDown" data-delay="500">Cochin University of Science And Technology, Kochi</h3>
+            <ul class="list-inline">
+                <li><a href="register.html" class="btn btn-default register2" data-animation="bounceIn">Register Now</a></li>
+            </ul>
+            </div>
+            </div>
+            <div class="text-heading">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <article class="center">    
+                        <span class="h1" style="color: #E65546;font-size: 5em;font-weight: bolder;margin-bottom: 1px;">3</span>
+                        <p class="thin" style="color: #FFE600;font-size: 2.5em;letter-spacing: -1px;text-transform: none;">Days</p>
+                    </article>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <article class="center">    
+                        <span class="h1" style="color: #E65546;font-size: 5em;font-weight: bolder;margin-bottom: 1px;">40+</span>
+                        <p class="thin" style="color: #FFE600;font-size: 2.5em;letter-spacing: -1px;text-transform: none;">Makes</p>
+                    </article>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <article class="center">    
+                        <span class="h1" style="color: #E65546;font-size: 5em;font-weight: bolder;margin-bottom: 1px;">50+</span>
+                      <p class="thin" style="color: #FFE600;font-size: 2em;letter-spacing: 0px;text-transform: none;">Learning Stations</p>
+                    </article>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <article class="center">    
+                        <span class="h1" style="color: #E65546;font-size: 5em;font-weight: bolder;margin-bottom: 1px;">10+</span>
+                        <p class="thin" style="color: #FFE600;font-size: 2.5em;letter-spacing: -1px;text-transform: none;">Talks</p>
+                    </article>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <article class="center">    
+                        <span class="h1" style="color: #E65546;font-size: 5em;font-weight: bolder;margin-bottom: 1px;">3000+</span>
+                        <p class="thin" style="color: #FFE600;font-size: 2.5em;letter-spacing: -1px;text-transform: none;">Attends</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+            
+    </div>
+    
+    <a id="showHere"></a>
+    
+  <section id="what" class="section dark">
+        <div class="container">
+    
+          <ul class="nav nav-tabs alt">
+                <li class="active"><a href="#first-tab-alt" data-toggle="tab">LEARN</a></li>
+                <li class=""><a href="#second-tab-alt" data-toggle="tab">DISCOVER</a></li>
+                <li><a href="#third-tab-alt" data-toggle="tab">TEACH</a></li>
+            </ul>
+                    
+            <div class="tab-content alt">
+            <div class="tab-pane active" id="first-tab-alt">
+                <div class="section-content row">                
+                <div class="col-sm-6 pull-right animated hiding" data-animation="fadeInRight">
+                  
+                CONTENT
+
+                </div>
+                <div class="col-sm-6 animated hiding" data-animation="fadeInLeft">
+                  <br/><br/>
+                  <article class="center" style="text-align: left;">
+                    <h3><span class="highlight">LEARN</span> THE <span class="highlight">WEB</span></h3>
+                    <div class="sub-title">Start sharing your knowledge.</div>
+                    <p>Share what you know. Anyone can teach with Webmaker. Whether you’re an educator in the classroom or an enthusiastic mentor, parent or friend, we’ve got activities and teaching guides that can help.</p>
+                    <ul class="list-inline">
+                              <li><a href="register.html" class="btn btn-primary animated hiding" data-animation="bounceIn" data-delay="700">REGISTER NOW</a></li>
+                          </ul>
+                  </article>
+                </div>
+          </div>
+                </div>
+            <div class="tab-pane" id="second-tab-alt">
+          <div class="section-content row">                
+                <div class="col-sm-6 pull-right animated hiding" data-animation="fadeInRight">
+                  
+                CONTENT
+
+                </div>
+                <div class="col-sm-6 animated hiding" data-animation="fadeInLeft">
+                  <br/><br/>
+                  <article class="center" style="text-align: left;padding-right: 50px;">
+                    <h3><span class="highlight">DISCOVER</span></h3>
+                    <div class="sub-title">Discover something new.</div>
+                    <p>Get your feet wet. Introduce yourself to new digital skills quickly through fun things to read, watch, listen or share.</p>
+                    <ul class="list-inline">
+                              <li><a href="register.html" class="btn btn-primary animated hiding" data-animation="bounceIn" data-delay="700">REGISTER NOW</a></li>
+                          </ul>
+                  </article>
+                </div>
+          </div>
+          
+          <br/>
+          <br/>
+        </div>  
+        <div class="tab-pane" id="third-tab-alt">
+          <div class="section-content row">                
+                <div class="col-sm-6 pull-right animated hiding" data-animation="fadeInRight">
+                  
+                CONTENT
+
+                </div>
+                <div class="col-sm-6 animated hiding" data-animation="fadeInLeft">
+                  <br/><br/>
+                  <article class="center" style="text-align: left;">
+                    <h3><span class="highlight">MAKE THE WEB</span></h3>
+                    <div class="sub-title">Study at your own pace to teach web literacy, digital skills and open practices.</div>
+                    <p>Get your hands dirty. The best way to learn is through hands-on making and building! Create web pages, multimedia videos, or remixes that help you learn practical skills as you go.</p>
+                    <ul class="list-inline">
+                              <li><a href="register.html" class="btn btn-primary animated hiding" data-animation="bounceIn" data-delay="700">REGISTER NOW</a></li>
+                          </ul>
+                  </article>
+                </div>
+          </div>
+                </div>
+          
+                
+      </div>
+        </div>
+    </section>
+
+    <section id="hackathon">
+      <div class="container">
+      <div class="tab-pane" id="second-tab-alt">
+                           <div class="section-content row">                
+                <div class="col-sm-6 pull-right animated hiding" data-animation="fadeInRight">
+                  <img src="assets/img/features/firefox-os.png" class="img-responsive pull-right" alt="process 2" />
+                </div>
+                <div class="col-sm-6 animated hiding" data-animation="fadeInLeft">
+                  <br/><br/>
+                  <article class="center">
+                    <h3 style="color:white;"><strong>24 Hour Firefox OS Hackathon</strong></h3>
+                    <div class="sub-title" style="color:#3F3D3D">Yes !!! Hack an OS :)</div>
+                    <p> Firefox OS, the new operating mobile system from Mozilla, represents a wonder for many students and developers who want to create apps for it. Here at this Hackathon, you have a chance to prove your abilities with Web technologies (CSS, HTML and JavaScript), to learn new things about Firefox OS and to test apps on new devices (Keon and Peak). </p>
+                    <ul class="list-inline">
+                              <li><a href="register.html#hackathon" class="btn btn-primary animated hiding" data-animation="bounceIn" data-delay="700">REGISTER NOW</a></li>
+                          </ul>
+                  </article>
+                </div>
+          </div>
+                </div>
+          </div>
+    </section>
+    
+    <section id="process" class="section dark">
+        <div class="container">
+            <div class="section-content row">                
+                <div class="col-sm-6 pull-right animated hiding" data-animation="fadeInRight">
+                    <img src="assets/img/features/content_image1.png" class="img-responsive" alt="process 2" />
+                </div>
+                <div class="col-sm-6 animated hiding" data-animation="fadeInLeft">
+          <br/><br/>
+                    <article>
+                        <h3>What is <span class="highlight"> Maker Party</span> ?</h3>
+                        <p>Maker Party is Mozilla's global campaign to teach the web. Through thousands of community-run events around the world, Maker Party unites educators, organizations and enthusiastic web users with hands-on learning and making. </p>
+                        <div class="sub-title">Web Maker Party website : <a href="https://party.webmaker.org/" target="_blank">Click Here</a></div>
+                        <div class="sub-title">Web Maker website : <a href="https://webmaker.org/" target="_blank">Click Here</a></div>
+                        <div class="sub-title">Wikipedia page : <a href="https://wiki.mozilla.org/Maker_Party" target="_blank">Click Here</a></div>
+                        <!-- <a href="http://www.makesummer.org/"><img src="assets/img/logos/MakeSummer_logo.png" class="img-responsive" width="400px"></a> -->
+                    </article>
+                </div>
+                
+                
 
 
+                <hr class="clearfix" />
+               
+            </div>
+        </div>
+    </section>
+    
+    <div class="video-wrapper">
+            <div class="container">
+                <div class="video-container animated hiding" data-animation="bounceInUp" data-delay="1000">
+                    <div class="embed-container">
+                        <iframe src='https://www.youtube.com/embed/oko6TzPQE6Y' allowFullScreen></iframe>
+                    </div>
+                </div>
+            </div>
+    </div>
 
+    <section id="mozk" class="section inverted">
+        <div class="container">
+            <div class="section-content">
+                <div id="featuredTab">
+                    <ul class="list-unstyled animated hiding" data-animation="fadeInRight">
+                      <li class="active">
+                          <a href="#mentor" data-toggle="tab">
+                              <div class="tab-info">
+                                  <div class="tab-title">Mentors</div>
+                                  <div class="tab-desc">Know more about our <br >supporters, our backbone.</div>
+                              </div>
+                              <!--<div class="tab-icon"><span class="icon icon-seo-icons-27"></span></div>-->
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#mozkl" data-toggle="tab">
+                              <div class="tab-info">
+                                  <div class="tab-title">About Mozilla Kerala</div>
+                                  <div class="tab-desc">Know more about the <br />Mozilla Kerala Community.</div>
+                              </div>
+                              <!--<div class="tab-icon"><span class="icon icon-multimedia-20"></span></div>-->
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#team" data-toggle="tab">
+                              <div class="tab-info">
+                                  <div class="tab-title">The Team</div>
+                                  <div class="tab-desc">Meet the Team at <br />Developer Boot Camp.</div>
+                              </div>
+                              <!-- <div class="tab-icon"><span class="icon icon-seo-icons-28"></span></div>-->
+                          </a>
+                      </li>
+                    </ul>
+                    
+                    <div class="tab-content animated hiding" data-animation="fadeInLeft">
+                      <div class="tab-pane  in active" id="mentor">
+                      <img src="assets/img/mentors.png" class="img-responsive animated hiding" width="850px" data-animation="fadeInLeft" alt="mentor maker party kochi" />
+                      </div>
+                      <div class="tab-pane" id="mozkl">
+                        <img src="assets/img/mozkl.png" class="img-responsive animated hiding" width="700px" data-animation="fadeInLeft" alt="mozilla kerala" />
+                      </div>
+                      
+                      <div class="tab-pane" id="team">
 
+                        <img src="assets/img/mozk.png" class="img-responsive animated hiding" width="850px" data-animation="fadeInLeft" alt="mozilla kerala" />
 
-      
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+  <ul class="list-inline">
+                <li></li>
+            </ul>
+  
+    
+    <section id="partner" class="section dark">
+        <div class="container">
+            <div class="section-header animated hiding" data-animation="fadeInDown">
+                <h2><span class="highlight">Partner Organizations</span></h2>
+                <div class="sub-heading">
+                    Our Sponsers and Partners !
+                    <br />
+                </div>
+            </div>
+          <ul class="list-inline logos">
+                    <li><a href="http://www.mozilla.org" target="_blank"><img class="animated fadeInUp visible" data-animation="fadeInUp" data-delay="0" src="assets/img/logos/mozilla-logo.png" alt="mozilla" width="200px"></a></li> 
+                    <li><a href="http://www.cusat.ac.in" target="_blank"><img class="animated fadeInUp visible" data-animation="fadeInUp" data-delay="400" src="assets/img/logos/cusat-logo.jpg" alt="cusat" width="150px"></a></li> 
+                    <li><a href="https://www.mozilla.org/en-US/firefox/os/" target="_blank"><img class="animated fadeInUp visible" data-animation="fadeInUp" data-delay="600" src="https://assets.mozilla.org/Brands-Logos/Firefox%20OS/logo-wordmark/firefox-os_logo-wordmark_RGB-vertical.png" alt="Make Summer" width="200px"></a></li>
+                    <li><a href="http://www.webmaker.org" target="_blank"><img class="animated fadeInUp visible" data-animation="fadeInUp" data-delay="800" src="assets/img/logos/webmaker_logo.png" alt="Webmaker" width="400px"></a></li>
+                    <li><a href="http://www.questapp.co/" target="_blank"><img class="animated fadeInUp visible" data-animation="fadeInUp" data-delay="800" src="http://www.questapp.co/image/logo_home_page.png" alt="Webmaker" width="150px"></a></li>
+                    <li><a href="http://www.roboinventions.com/" target="_blank"><img class="animated fadeInUp visible" data-animation="fadeInUp" data-delay="800" src="http://www.roboinventions.com/logo.png" alt="Webmaker" width="200px"></a></li>
+                    <li><a href="http://smc.org.in/" target="_blank"><img class="animated fadeInUp visible" data-animation="fadeInUp" data-delay="800" src="http://smc.org.in/img/logo.png" alt="Webmaker" width="150px"></a></li>
+                    <li><a href="https://www.wikimedia.org/" target="_blank"><img class="animated fadeInUp visible" data-animation="fadeInUp" data-delay="800" src="http://governancexborders.files.wordpress.com/2012/01/200px-wikimedia_foundation_rgb_logo_with_text.png" alt="Webmaker" width="150px"></a></li>
+                    <li><a href="http://www.wearfin.com" target="_blank"><img class="animated fadeInUp visible" data-animation="fadeInUp" data-delay="800" src="http://www.wearfin.com/img/logo.gif" alt="Webmaker" width="150px"></a></li>
+                    <li><a href="http://tridz.com/" target="_blank"><img class="animated fadeInUp visible" data-animation="fadeInUp" data-delay="800" src="http://startuptown.in/wp-content/uploads/2013/07/logo%20%2807-18-13-03-31-47%29.png" alt="Webmaker" width="150px"></a></li>
+                    <li><a href="http://bagyourjob.com/" target="_blank"><img class="animated fadeInUp visible" data-animation="fadeInUp" data-delay="800" src="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-9/549367_350389575080110_132267940_n.png?oh=de1d59d9ac20539299e20dfc72f6432e&oe=5488A383&__gda__=1418791279_fa771e3fb29040f223004de10e265784" alt="Webmaker" width="150px"></a></li>
+                    <li><a href="https://www.elopapp.com/" target="_blank"><img class="animated fadeInUp visible" data-animation="fadeInUp" data-delay="800" src="https://elop.s3.amazonaws.com/static/home/img/elop-logo.png" alt="Webmaker" width="150px"></a></li>
+          </ul>
+          </ul>
 
-
-
-
+        </div>
+    </section>
+    
        
-
-
-
-
-            <div class="col-md-4">
-                <div id="event-counts" class="row">
-                    <h1>3000+</h1><h2>Attendees</h2>
-                    <h1>50+</h1><h2>Learning Stations</h2> 
-                    <h1>40+</h1><h2>Makers</h2>
-                    <h1>10+</h1><h2>Talks</h2>
-                   <!-- <h1>3</h1><h2>Days</h2>-->
-                    <h3>and many more... :)</h3>
-
-                </div>
+    <section id="register" class="long-block light">
+        <div class="container">
+            <div class="col-md-12 col-lg-9">
+        <i class="icon icon-seo-icons-24 pull-left"></i>
+                <article class="pull-left">
+                    <h2><strong>What are you waiting for ?</strong></h2>
+                    <p class="thin">Join the Maker Party at CUSAT.</p>
+                </article>
             </div>
-
-
+      
+            <div class="col-md-12 col-lg-3">
+                <a href="register.html" class="btn btn-default">REGISTER NOW</a>
             </div>
+        </div>
+    </section>
+    
 
-        </section>
-
-
-<section id="watchvideo">
-    <div class="container">
-        
-    <h3 class="text-center"><a href="https://www.youtube.com/watch?v=oko6TzPQE6Y">Watch our video</a></h3>
-
-</div>
-</section>
-
-<section id="registerbanner">
-    <div class="container">
-        <div class="row">
-    <h1 class="col-md-2">Register Now</h1>
-    <ul class="col-md-10">
-        <li><a href="makes-register.html">Makers</a></li>
-        <li><a href="volunteer-register.html">Volunteer</a></li>
-        <!--<li><a href="#">Teaching</a></li>-->
-        
-    </ul>
-</div>
-</div>
-</section>
-
-
-
-
-
-<footer id="theend">
-
-    <div class="row">
+    <footer id="contacts" class="footer light">
+<div class="container">
+            <div class="footer-content row">
+     <div class="row">
         <div class="col-md-3">
             <div id="endcredits">
-                <h2>Credits?</h2>
-                <h4><a href="http://mozillakerala.org">A Mozilla Kerala Initative</a></h4>
+                <h2>Credits</h2>
+                <h4><a href="http://mozillakerala.org/">A Mozilla Kerala Initative</a></h4>
                 <h4>In Association With CUSAT, Kochi</h4>
                 <h4>CITTIC, CUSAT</h4>
             </div>
@@ -432,7 +383,7 @@ At the heart of Kochi and at one of the most pioneer educational institution of 
         <div class="col-md-6">
 
             
-            <h2>Need Help?</h2>
+            <h2>Need Help ?</h2>
             <div class="col-sm-4">
                 <p>
                     <strong>Abid Aboobaker</strong></br>
@@ -490,60 +441,50 @@ At the heart of Kochi and at one of the most pioneer educational institution of 
                     </br>
                     Mob: 9020024148
                     </br>mehar@anamega.com
-
-
                 </p>
             </div>
 
-
         </div>
 
+        <div class="col-sm-3 social-wrap">
+                    <h3>Social Networks</h3>
+                    <ul class="list-inline socials">
+                        <li><a href="#"><span class="icon icon-socialmedia-08"></span></a></li>
+                        <li><a href="#"><span class="icon icon-socialmedia-07"></span></a></li>
+                        <li><a href="#"><span class="icon icon-socialmedia-16"></span></a></li>
+                    </ul>
+                </div>
 
-
-        <div id="sociallinks" class="col-md-3">
-            <h2>Social?</h2>
-            <a href="http://facebook.com/makerpartykochi" >Facebook </a> </br> <a>Twitter </a>
-        </div>
     </div>
-</footer>
-
-
-    </div><!-- End Website Wrap -->
-
-
-
-
-
-
-    <div class="border-left"></div>
-    <div class="border-right"></div>
-    <div class="border-top"></div>
-    <div class="border-bottom"></div>
-
-
-
-
-     <!-- jQuery Version 1.11.0 -->
-   
- <script src="js/jquerymin.js"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Start of StatCounter Code for Default Guide -->
-<script type="text/javascript">
-var sc_project=10004292; 
-var sc_invisible=1; 
-var sc_security="0810299c"; 
-var scJsHost = (("https:" == document.location.protocol) ?
-"https://secure." : "http://www.");
-document.write("<sc"+"ript type='text/javascript' src='" +
-scJsHost+
-"statcounter.com/counter/counter.js'></"+"script>");
-</script>
-<noscript><div class="statcounter"><a title="shopify stats"
-href="http://statcounter.com/shopify/" target="_blank"><img
-class="statcounter"
-src="http://c.statcounter.com/10004292/0/0810299c/1/"
-alt="shopify stats"></a></div></noscript>
-<!-- End of StatCounter Code for Default Guide -->
-
+               
+            </div>
+        </div>
+        <div class="copyright"><a href="http://www.simpli5d.in" target="_blank"> A lovely contribution from Simpli5d Solutions</a> 2014. <a href="https://github.com/funnyakhil/MakerPartyKochi" arget="_blank">Fork on Github.</a></div>
+    </footer>
+    
+    <div class="back-to-top"><i class="fa fa-angle-up fa-3x"></i></div>
+    
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="assets/js/jquery-1.11.0.min.js?ver=1"></script>
+    <![endif]-->  
+    <!--[if (gte IE 9) | (!IE)]><!-->  
+        <script type="text/javascript" src="assets/js/jquery-2.1.0.min.js?ver=1"></script>
+    <!--<![endif]-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.popup.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.popup.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.nav.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.appear.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.plugin.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.countdown.js"></script>
+    <script type="text/javascript" src="assets/js/waypoints.min.js"></script>
+    <script type="text/javascript" src="assets/js/waypoints-sticky.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.validate.js"></script>
+    <script type="text/javascript" src="assets/js/toastr.min.js"></script>
+    <script type="text/javascript" src="assets/js/headhesive.min.js"></script>
+    <script type="text/javascript" src="assets/mailchimp/js/mailing-list.js"></script>
+    <script type="text/javascript" src="assets/js/scripts.js"></script>
 </body>
+</html>

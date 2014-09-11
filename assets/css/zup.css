@@ -1,0 +1,61 @@
+.layout_theme_home_boxes{
+	padding:15px 0 30px;
+}
+
+.layout_theme_home_boxes .home_boxes>div{
+	float:left;
+	width:31%;
+	letter-spacing: 11px;
+}
+
+html[dir="rtl"] .layout_theme_home_boxes .home_boxes>div{
+	float:right;
+}
+
+.layout_theme_home_boxes .home_boxes.onecol>div{
+	width:100%;
+}
+
+.layout_theme_home_boxes .home_boxes.twocol>div{
+	width:49%;
+}
+
+.layout_theme_home_boxes .home_boxes.threecol>div{
+	width:32%;
+}
+
+.layout_theme_home_boxes .home_boxes>div+div{
+	margin-left:2%;
+}
+
+html[dir="rtl"] .layout_theme_home_boxes .home_boxes>div+div{
+	margin-left:0;
+	margin-right:2%;
+}
+
+.layout_theme_home_boxes .home_boxes>div>div>a{
+	text-decoration:none !important;
+	display:block;
+}
+
+.layout_theme_home_boxes .home_boxes > div > div, .layout_theme_home_boxes .home_boxes>div>div>a>*{
+	text-align:center;
+	color:#555;
+}
+
+.layout_theme_home_boxes .home_boxes>div>div>a:hover>*{
+	color:#000;
+}
+
+.layout_theme_home_boxes .home_boxes>div>div>a>img{
+	margin-top:-50px;
+	border:6px solid #FFF;
+	border-radius:100%;
+	box-shadow:0 -3px 3px rgba(0,0,0,0.3);
+}
+
+.layout_theme_home_boxes .home_boxes>div>div>a>h3{
+	line-height:36px;
+	font-size:20px;
+	font-weight:700;
+}
